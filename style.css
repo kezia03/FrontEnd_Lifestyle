@@ -1,0 +1,217 @@
+body {
+  padding-top: 40px;
+}
+
+/* Navbar */
+.navbar {
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+.nav-link {
+  position: relative;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #6c757d;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6c757d;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.card {
+  border: none; /* Menghilangkan border default */
+  border-radius: 10px; /* Sudut melengkung */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  transition: transform 0.3s ease; /* Transisi saat hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efek angkat saat hover */
+}
+
+.card-img-top {
+  border-top-left-radius: 10px; /* Sudut melengkung pada gambar */
+  border-top-right-radius: 10px; /* Sudut melengkung pada gambar */
+}
+
+.btn-outline-primary {
+  border-color: #6c757d; /* Border warna #6c757d */
+  color: #6c757d; /* Teks warna #6c757d */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi halus */
+}
+
+.btn-outline-primary:hover {
+  background-color: #6c757d; /* Warna latar belakang saat hover */
+  color: #fff; /* Teks berwarna putih saat hover */
+  border-color: #6c757d; /* Ganti border color saat hover */
+}
+
+/* Featured Articles */
+.featured-articles {
+  background-color: #f8f9fa; /* Background light gray */
+  padding: 50px 0; /* Padding atas dan bawah */
+  border-radius: 10px; /* Sudut melengkung */
+}
+
+.featured-articles h2 {
+  color: #343a40; /* Warna teks gelap untuk judul */
+  font-weight: 700; /* Berat font */
+}
+
+/* Carousel */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel .btn-primary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carousel .btn-primary:hover {
+  background-color: #5a6268;
+  color: #f8f9fa;
+  border-color: #5a6268;
+}
+
+.carousel-caption {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.carousel-caption h5 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Shadow untuk kontras */
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  color: #ddd;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Shadow untuk kontras */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Testimonials */
+.testimonial {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Ganti warna button Subscribe */
+.newsletter .btn-primary {
+  background-color: #6c757d; /* Warna latar belakang saat tidak di-hover */
+  border-color: #6c757d; /* Warna border */
+  color: #fff; /* Warna teks */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi halus */
+}
+
+/* Button Subscribe saat hover */
+.newsletter .btn-primary:hover {
+  background-color: #fff; /* Warna latar belakang saat hover */
+  border-color: #6c757d; /* Warna border saat hover */
+  color: #6c757d; /* Warna teks saat hover */
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+footer p {
+  line-height: 1.6;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Footer Bottom */
+footer .list-inline {
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+footer .list-inline-item {
+  margin-right: 15px;
+}
+
+footer .list-inline-item a {
+  color: #bbb;
+}
+
+footer .list-inline-item a:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  footer .social-links {
+    justify-content: center;
+  }
+}
